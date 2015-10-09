@@ -1,0 +1,184 @@
+/* ======================
+Jogo dos Quadrados
+Inteligência Artificial
+FCT - Unesp
+Author: Vagner Santana
+RA: 1288549
+v0.1
+File: style.css
+=========================*/
+
+/* ======================
+	Tags Style
+=========================*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	background: rgb(83,83,83);
+}
+h1{
+	font-size: 45px;
+	text-shadow: 0px -2px 0px #333,
+				 0px 2px 3px #666;
+}
+h1, h2{text-align: center;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+input{height: 28px; width: 100px;}
+footer{
+	margin: 10px auto;
+	width: 80%;
+	text-align: center;
+	border-top: dashed 1px #696b6f;
+}
+
+/* ======================
+	Page Elements
+=========================*/
+.btn {
+    padding: 10px;
+    position: relative;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    background: #104b6b;
+    border: solid 1px #072231;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #0c3c56;
+}
+
+.btn:active {
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 11px;
+    top: 1px;
+    background: #082a3c;
+}
+
+.lf{float: left;}
+.rg{float: right;}
+
+/* ======================
+	Game Elements 
+=========================*/
+.game{
+	width: 364px;
+	height: 350px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.game ul{
+	position: relative;
+	left: -25px;
+}
+
+.square{
+	width: 100px;
+	height: 100px;
+	list-style: none;
+	border: solid 2px #000;
+	float: left;
+	text-align: center;
+	font-size: 50px;
+	border-radius: 10px;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.square div{
+	width: 100px;
+	height: 100px;
+	border-radius: 7px;
+	line-height: 100px;
+}
+
+.options{
+	width: 500px;
+	margin: 0 auto;
+}
+
+/* Preenchimento de cores */
+.success{
+	background: #0ae624 !important;
+	background: -webkit-linear-gradient(top, #0ae624, #038312) repeat-X !important;
+	background: -moz-linear-gradient(top, #0ae624, #038312) repeat-X !important;
+	background: -o-linear-gradient(top, #0ae624, #038312) repeat-X !important;
+	background: -ms-linear-gradient(top, #0ae624, #038312) repeat-X !important;
+	background: linear-gradient(top, #0ae624, #038312) repeat-X !important;
+}
+
+#pc-1{
+	background: #133b90;
+	background: -webkit-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -moz-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -o-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -ms-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+}
+#pc-2{
+	background: #133b90;
+	background: -webkit-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -moz-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -o-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -ms-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+}
+#pc-3{
+	background: #133b90;
+	background: -webkit-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -moz-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -o-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: -ms-linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+	background: linear-gradient(top, #133b90, #0ab5b4) repeat-X;
+}
+#pc-4{
+	background: #0ab5b4;
+	background: -webkit-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -moz-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -o-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -ms-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+}
+#pc-5{
+	background: #0ab5b4;
+	background: -webkit-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -moz-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -o-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -ms-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+}
+#pc-6{
+	background: #0ab5b4;
+	background: -webkit-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -moz-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -o-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: -ms-linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+	background: linear-gradient(top, #0ab5b4, #1fe883) repeat-X;
+}
+#pc-7{
+	background: #1fe883;
+	background: -webkit-linear-gradient(top, #1fe883, #d1f535) repeat-X;
+	background: -moz-linear-gradient(top, #1fe883, #d1f535) repeat-X;
+	background: -o-linear-gradient(top, #1fe883, #d1f535) repeat-X;
+	background: -ms-linear-gradient(top, #1fe883, #d1f535) repeat-X;
+	background: linear-gradient(top, #1fe883, #d1f535) repeat-X;
+}
+#pc-8{
+	background: #1fe883;
+	background: -webkit-linear-gradient(top, #1fe883, #d1f535) repeat-X;
+	background: -moz-linear-gradient(top, #1fe883, #d1f535) repeat-X;
+	background: -o-linear-gradient(top, #1fe883, #d1f535) repeat-X;
+	background: -ms-linear-gradient(top, #1fe883, #d1f535) repeat-X;
+	background: linear-gradient(top, #1fe883, #d1f535) repeat-X; 
+}
+
+.free{
+	background: #ffffff;
+}
